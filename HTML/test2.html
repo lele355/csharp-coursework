@@ -1,0 +1,103 @@
+<HTML>
+    <HEAD>
+    <TITLE> New Document </TITLE>
+    </HEAD>
+    <BODY>
+        <FORM METHOD="POST" ACTION="test2.asp" name="f1">
+        <TABLE>
+            <TR>
+                <TD>文本输入(text)</TD>
+                <TD><INPUT TYPE="text" NAME="t1" SIZE="20" MAXLENGTH="50"></TD>
+            </TR>
+            <TR>
+                <TD>密码输入(password)</TD>
+                <TD><INPUT TYPE="password" NAME="pl"></TD>
+            </TR>
+            <TR>
+                <TD>多选框(checkbox)</TD>
+                <TD>
+                    <INPUT TYPE="checkbox" NAME="c1" value="1">&nbsp;
+                    <INPUT TYPE="checkbox" NAME="c2" value="2">
+                </TD>
+            </TR>
+            <TR>
+                <TD>单选框(radio)</TD>
+                <TD>
+                    <INPUT TYPE="radio" NAME="r1" value="男" checked>男&nbsp;
+                    <INPUT TYPE="radio" NAME="r1" value="女">女
+                </TD>
+            </TR>
+            <TR>
+                <TD>提交按钮(submit)</TD>
+                <TD><INPUT TYPE="submit"></TD>
+            </TR>
+            <TR>
+                <TD>复位按钮(reset)</TD>
+                <TD><INPUT TYPE="reset"></TD>
+            </TR>
+            <TR>
+                <TD>普通按钮(button)</TD>
+                <TD><INPUT TYPE="button" style="width:60px" value="变换" onclick="dono()"></TD>
+            </TR>
+            <TR>
+                <TD>图画(image)</TD>
+                <TD><INPUT TYPE="image" SRC="C:\Users\25806\Pictures\Default.jpg" style="width:100px; height:100px;"></TD>
+            </TR>
+            <TR>
+                <TD>隐藏项(hidden)</TD>
+                <TD><INPUT TYPE="hidden" name="h1" value="id2001"></TD>
+            </TR>
+            <TR>
+                <TD>下拉列表</TD>
+                <TD>
+                    <SELECT NAME="yearth">
+                        <OPTION>2022</OPTION>
+                        <OPTION selected>2023</OPTION>
+                        <OPTION>2024</OPTION>
+                    </SELECT>年
+                </TD>
+            </TR>
+            <TR>
+                <TD>下拉多选列表</TD>
+                <TD>
+                    <SELECT NAME="yearth" multiple>
+                        <OPTION>2022</OPTION>
+                        <OPTION>2023</OPTION>
+                        <OPTION>2024</OPTION>
+                        <OPTION>2025</OPTION>
+                    </SELECT>年
+                </TD>
+            </TR>
+        </TABLE>
+        <marquee id="mq1" name="mq1" direction="right" behavior="alternate" loop="100"
+        scrollamount="10" scrolldelay="1" align="bottom" bgcolor="red" height="200" width="500"
+        hspace="20" vspace="20">
+            <FONT SIZE="7" COLOR="">我的动态移动字体</FONT>
+        </marquee><BR>
+        <embed src="C:\Users\25806\Videos\屏幕录制\屏幕录制 2025-03-20 114121.mp4" width="300" height="100"><BR>
+        </FORM>
+        <FONT SIZE="7" COLOR="">
+            1<B>粗体</B><BR>
+            2<u>带下划线</u><BR>
+            3<STRIKE>带删除线</STRIKE><BR>
+            4<sup>上标</sup><BR>
+            5<small>小字体文本</small><BR>
+            6<I>斜体</I><BR>
+            7<tt>标准打印机字体</tt><BR>
+            8<sub>下标</sub><BR>
+            9<big>大字体文本</big><BR>
+        </FONT>    
+    </BODY>
+    <SCRIPT LANGUAGE="JavaScript">
+    <!--
+    function dono() 
+    {
+        var mq1 = document.getElementById("mq1");
+        if (mq1.behavior === "scroll") 
+            mq1.behavior = "alternate"; 
+        else 
+            mq1.behavior = "scroll";
+    }
+    //-->
+    </SCRIPT>
+    </HTML>

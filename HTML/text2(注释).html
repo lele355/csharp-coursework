@@ -1,0 +1,108 @@
+<HTML>
+    <HEAD>
+        <TITLE> New Document </TITLE> <!-- 网页标题 -->
+    </HEAD>
+    <BODY>
+        <!-- 表单开始 -->
+        <FORM METHOD="POST" ACTION="test2.asp" name="f1"> <!-- 表单提交方式为POST，提交到test2.asp -->
+        <TABLE> <!-- 表格布局 -->
+            <TR>
+                <TD>文本输入(text)</TD> <!-- 文本输入框标签 -->
+                <TD><INPUT TYPE="text" NAME="t1" SIZE="20" MAXLENGTH="50"></TD> <!-- 文本输入框 -->
+            </TR>
+            <TR>
+                <TD>密码输入(password)</TD> <!-- 密码输入框标签 -->
+                <TD><INPUT TYPE="password" NAME="pl"></TD> <!-- 密码输入框 -->
+            </TR>
+            <TR>
+                <TD>多选框(checkbox)</TD> <!-- 多选框标签 -->
+                <TD>
+                    <INPUT TYPE="checkbox" NAME="c1" value="1">&nbsp; <!-- 多选框1 -->
+                    <INPUT TYPE="checkbox" NAME="c2" value="2"> <!-- 多选框2 -->
+                </TD>
+            </TR>
+            <TR>
+                <TD>单选框(radio)</TD> <!-- 单选框标签 -->
+                <TD>
+                    <INPUT TYPE="radio" NAME="r1" value="男" checked>男&nbsp; <!-- 单选框：男 -->
+                    <INPUT TYPE="radio" NAME="r1" value="女">女 <!-- 单选框：女 -->
+                </TD>
+            </TR>
+            <TR>
+                <TD>提交按钮(submit)</TD> <!-- 提交按钮标签 -->
+                <TD><INPUT TYPE="submit"></TD> <!-- 提交按钮 -->
+            </TR>
+            <TR>
+                <TD>复位按钮(reset)</TD> <!-- 重置按钮标签 -->
+                <TD><INPUT TYPE="reset"></TD> <!-- 重置按钮 -->
+            </TR>
+            <TR>
+                <TD>普通按钮(button)</TD> <!-- 普通按钮标签 -->
+                <TD><INPUT TYPE="button" style="width:60px" value="变换" onclick="dono()"></TD> <!-- 普通按钮，点击触发JavaScript函数 -->
+            </TR>
+            <TR>
+                <TD>图画(image)</TD> <!-- 图像按钮标签 -->
+                <TD><INPUT TYPE="image" SRC="C:\Users\25806\Pictures\Default.jpg" style="width:100px; height:100px;"></TD> <!-- 图像按钮 -->
+            </TR>
+            <TR>
+                <TD>隐藏项(hidden)</TD> <!-- 隐藏项标签 -->
+                <TD><INPUT TYPE="hidden" name="h1" value="id2001"></TD> <!-- 隐藏输入项 -->
+            </TR>
+            <TR>
+                <TD>下拉列表</TD> <!-- 下拉列表标签 -->
+                <TD>
+                    <SELECT NAME="yearth"> <!-- 下拉列表 -->
+                        <OPTION>2022</OPTION> <!-- 选项2022 -->
+                        <OPTION selected>2023</OPTION> <!-- 默认选中2023 -->
+                        <OPTION>2024</OPTION> <!-- 选项2024 -->
+                    </SELECT>年
+                </TD>
+            </TR>
+            <TR>
+                <TD>下拉多选列表</TD> <!-- 下拉多选列表标签 -->
+                <TD>
+                    <SELECT NAME="yearth" multiple> <!-- 下拉多选列表 -->
+                        <OPTION>2022</OPTION> <!-- 选项2022 -->
+                        <OPTION>2023</OPTION> <!-- 选项2023 -->
+                        <OPTION>2024</OPTION> <!-- 选项2024 -->
+                        <OPTION>2025</OPTION> <!-- 选项2025 -->
+                    </SELECT>年
+                </TD>
+            </TR>
+        </TABLE>
+        <!-- 动态文字滚动 -->
+        <marquee id="mq1" name="mq1" direction="right" behavior="alternate" loop="100"
+        scrollamount="10" scrolldelay="1" align="bottom" bgcolor="red" height="200" width="500"
+        hspace="20" vspace="20">
+            <FONT SIZE="7" COLOR="">我的动态移动字体</FONT> <!-- 滚动的文字内容 -->
+        </marquee><BR>
+        <!-- 嵌入视频 -->
+        <embed src="C:\Users\25806\Videos\屏幕录制\屏幕录制 2025-03-20 114121.mp4" width="300" height="100"><BR>
+        </FORM>
+        <!-- 各种字体样式 -->
+        <FONT SIZE="7" COLOR="">
+            1<B>粗体</B><BR> <!-- 粗体 -->
+            2<u>带下划线</u><BR> <!-- 带下划线 -->
+            3<STRIKE>带删除线</STRIKE><BR> <!-- 带删除线 -->
+            4<sup>上标</sup><BR> <!-- 上标 -->
+            5<small>小字体文本</small><BR> <!-- 小字体 -->
+            6<I>斜体</I><BR> <!-- 斜体 -->
+            7<tt>标准打印机字体</tt><BR> <!-- 打印机字体 -->
+            8<sub>下标</sub><BR> <!-- 下标 -->
+            9<big>大字体文本</big><BR> <!-- 大字体 -->
+        </FONT>    
+    </BODY>
+    <!-- JavaScript脚本 -->
+    <SCRIPT LANGUAGE="JavaScript">
+    <!--
+    function dono() 
+    {
+        var mq1 = document.getElementById("mq1"); // 获取动态文字的元素
+        if (mq1.behavior === "scroll") 
+            mq1.behavior = "alternate"; // 切换为交替滚动
+        else 
+            mq1.behavior = "scroll"; // 切换为连续滚动
+    }
+    //-->
+    </SCRIPT>
+</HTML>

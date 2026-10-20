@@ -1,0 +1,32 @@
+<HTML>
+    <HEAD>
+        <TITLE>填写留言</TITLE> <!-- 网页标题 -->
+    </HEAD>
+    <BODY>
+        <!-- 页面标题 -->
+        <P align="center"> <!-- 居中对齐 -->
+            <FONT SIZE="7" COLOR="#0000CC" face="黑体">留言簿</FONT> <!-- 设置字体大小、颜色和字体样式 -->
+        </P>
+        <!-- 表单开始 -->
+        <FORM METHOD="POST" ACTION=""> <!-- 表单提交方式为POST，提交地址为空 -->
+            <TABLE align="center"> <!-- 表格居中 -->
+                <TR>
+                    <TD>昵称</TD> <!-- 昵称标签 -->
+                    <TD><INPUT TYPE="text" NAME="author"></TD> <!-- 文本输入框，用于填写昵称 -->
+                </TR>
+                <TR>
+                    <TD>EMail</TD> <!-- 邮箱标签 -->
+                    <TD><INPUT TYPE="text" NAME="email"></TD> <!-- 文本输入框，用于填写邮箱 -->
+                </TR>
+                <TR>
+                    <TD>留言:</TD> <!-- 留言标签 -->
+                    <TD><TEXTAREA NAME="msg" ROWS="4" COLS="36"></TEXTAREA></TD> <!-- 文本区域，用于填写留言内容 -->
+                </TR>
+            </TABLE>
+            <!-- 提交和重置按钮 -->
+            <CENTER> <!-- 按钮居中 -->
+                <INPUT TYPE="submit">&nbsp;&nbsp;<INPUT TYPE="reset"> <!-- 提交按钮和重置按钮 -->
+            </CENTER>
+        </FORM>
+    </BODY>
+</HTML>
